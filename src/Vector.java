@@ -65,10 +65,9 @@ public class Vector {
 		res.setZ(this.getZ()+vec1.getZ());
 		return res;
 	}
-	public void scalarMultiplication(Vector vec1) {
-		double res = this.getX()*vec1.getX()+this.getY()*vec1.getY()+this.getZ()*vec1.getZ();
-		System.out.println("("+this.getX()+";"+this.getY()+";"+this.getZ()+")*("+vec1.getX()+";"+vec1.getY()+";"
-				+vec1.getZ()+") = "+res);
+	public double scalarMultiplication(Vector vec1) {
+		return  this.getX()*vec1.getX()+this.getY()*vec1.getY()+this.getZ()*vec1.getZ();
+		
 	}
 	public Vector vectorMultiplication(Vector vec1) {
 		Vector res = new Vector();
